@@ -159,6 +159,10 @@ const handleFourty = () =>{
                     <h4>Question_1: How To React Work?</h4>
                     <p>Ans: 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 'V' denotes the view in MVC. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application. It is maintained by Facebook</p>
+
+
+               <h4>Question_2: Props and State difference?</h4>
+               <p>Ans: Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component</p>
                </div>
 
         </div>
