@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import BreakTime from '../BreakTime/BreakTime';
 import { localStoragee } from '../LocalStorage/LOcalStorage';
 import './Cart.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const {cart} = props;
+    console.log(Cart);
 
     let total = 0;
     for(const game of cart){
@@ -73,6 +76,13 @@ const handleFourty = () =>{
     // End BreakPart___________
 
 
+    const notify = () => toast('Here is your toast.');
+
+
+
+    
+
+
     return (
         <div className='cart'>
              <h1>This is for Cart</h1>
@@ -137,9 +147,12 @@ const handleFourty = () =>{
                 
             </div>
 
-            <button className='activity'>
+            <button onClick={notify} className='activity'>
                 <h3>Activity Completed</h3>
             </button>
+
+               <ToastContainer></ToastContainer>
+
         </div>
     );
 };

@@ -19,9 +19,12 @@ const Games = () => {
     const handleAddToCart = (game) => {
         // console.log(game);
         const newCart = [...cart, game];
+
         setCart(newCart);
 
     }
+
+    
     return (
         <div >
             <h3>Select Your Favorite Game</h3>
