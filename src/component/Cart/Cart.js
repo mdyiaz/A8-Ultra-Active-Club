@@ -163,6 +163,17 @@ React is a declarative, efficient, and flexible JavaScript library for building 
 
                <h4>Question_2: Props and State difference?</h4>
                <p>Ans: Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component</p>
+
+
+               <h4>Question_3: What useEffect is used for other than data load?</h4>
+
+               <p>Ans: Main reason to use useEffect in React. 1.useEffect use cases
+1. Running once on mount: fetch API data
+2. Running on state change: validating input field
+3.Running on state change: live filtering
+4. Running on state change: trigger animation on new array value
+5.Running on props change: update paragraph list on fetched API data update
+6. Running on props change: updating fetched API data to get BTC updated price</p>
                </div>
 
         </div>
