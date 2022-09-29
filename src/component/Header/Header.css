@@ -1,0 +1,22 @@
+.header{
+    background-color: #101010;
+    height: 70px;
+    color: #C44304;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    /* position: sticky;
+    top: 0; */
+   
+}
+
+.font{
+    font-weight: 900;
+  
+   
+}
+
+.logo{
+    width: 50px;
+}

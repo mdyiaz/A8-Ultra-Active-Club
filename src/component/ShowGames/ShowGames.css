@@ -1,0 +1,27 @@
+.game{
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+
+
+.game img{
+    width: 286px;
+    border-radius: 8px;
+   
+
+}
+
+.btn-cart{
+    width: 100%;
+    background-color: #FF5400;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-cart:hover{
+    background-color: #BC004B;
+}
+

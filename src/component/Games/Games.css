@@ -1,0 +1,15 @@
+.main-page{
+
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+
+}
+
+
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+}
+

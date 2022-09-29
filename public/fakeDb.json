@@ -1,0 +1,77 @@
+[
+    {
+      "_id": "63349b3ac37e3ec5b6d0516a",
+      "picture": "https://wallpapercave.com/wp/wp3638055.jpg",
+      "name": "Pubg Mobile",
+      "age": "18-28",
+      "time": 24,
+      "minute": 30
+    },
+    {
+      "_id": "63349b3a6877a9c66a5087df",
+      "picture": "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/codm/COD-LAUNCH-TOUT.jpg",
+      "name": "Call Of Duty",
+      "age": "18-25",
+      "time": 31,
+      "minute": 40
+    },
+    {
+      "_id": "63349b3a2ee82f8b7a1590ba",
+      "picture": "https://www.andropalace.org/wp-content/uploads/2017/07/valerian-mod-apk.jpg",
+      "name": "Valerian City of Alpha",
+      "age": "18-25",
+      "time": 34,
+      "minute": 50
+    },
+    {
+      "_id": "63349b3adafe2a290441ed8b",
+      "picture": "https://cdn.vox-cdn.com/thumbor/Ad-rhnuXJMU9j6Qj9_7vwGWR51c=/0x0:1920x1080/2400x1356/filters:focal(960x540:961x541)/cdn.vox-cdn.com/uploads/chorus_asset/file/23574806/FTIN491VEAAA7eQ.jpeg",
+      "name": "The Witcher Wild Hunt",
+      "age": "18-28",
+      "time": 22,
+      "minute": 30
+    },
+    {
+      "_id": "63349b3af9f083ba4ebaf1be",
+      "picture": "https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/05/D2_S17_XBOX_Wire_1920x1080_EN-35fed1ba5156afc45bed.jpg",
+      "name": "Destiny-2",
+      "age": "18-25",
+      "time": 39,
+      "minute": 60
+    },
+    {
+        "_id": "63349b3af9f083ba4ebaf1bg",
+        "picture": "https://upload.wikimedia.org/wikipedia/en/1/1d/MultiVersus_Cover_Art.png",
+        "name": "Multiversus",
+        "age": "18-25",
+        "time": 39,
+        "minute": 30
+    },
+
+    {
+      "_id": "63349b3ac37e3ec5b8d0516a",
+      "picture": "https://wallpapercave.com/wp/wp3638055.jpg",
+      "name": "Pubg Mobile",
+      "age": "18-28",
+      "time": 24,
+      "minute": 30
+    },
+    {
+      "_id": "63349b3a6877a9h66a5087df",
+      "picture": "https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/codm/COD-LAUNCH-TOUT.jpg",
+      "name": "Call Of Duty",
+      "age": "18-25",
+      "time": 31,
+      "minute": 40
+    },
+    {
+      "_id": "63349b3a2ee82f8d7a1590ba",
+      "picture": "https://www.andropalace.org/wp-content/uploads/2017/07/valerian-mod-apk.jpg",
+      "name": "Valerian City of Alpha",
+      "age": "18-25",
+      "time": 34,
+      "minute": 50
+    }
+
+    
+  ]
