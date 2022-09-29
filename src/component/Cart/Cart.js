@@ -6,32 +6,39 @@ import './Cart.css';
 const Cart = (props) => {
     const {cart} = props;
 
-    const [times,setTimes] = useState([])
+    let total = 0;
+    for(const game of cart){
+        total = total + game.time;
+    }
 
-    useEffect(() =>{
-        fetch('Break.json')
-        .then(res=>res.json())
-        .then(data=>setTimes(data))
-    },[]);
+    // console.log(cart);
+
+    // const [times,setTimes] = useState([])
+
+    // useEffect(() =>{
+    //     fetch('Break.json')
+    //     .then(res=>res.json())
+    //     .then(data=>setTimes(data))
+    // },[]);
 
 
-    const [breakUseState,setBreakUseState] = useState([0]);
-    const handleBreak = (time) => {
-        setBreakUseState(breakUseState);
-        localStorage.setItem('breakTime', breakUseState);
+    // const [breakUseState,setBreakUseState] = useState([0]);
+    // const handleBreak = (time) => {
+    //     setBreakUseState(breakUseState);
+    //     localStorage.setItem('breakTime', breakUseState);
        
-    };
+    // };
 
-    useEffect(() => {
-        const storedItem = localStorage.getItem('breakTime');
-        if(storedItem){
-            setBreakUseState(storedItem);
-        }
-    },[]);
+    // useEffect(() => {
+    //     const storedItem = localStorage.getItem('breakTime');
+    //     if(storedItem){
+    //         setBreakUseState(storedItem);
+    //     }
+    // },[]);
 
 
 
-    // start___________
+    // start BreakPart___________
 
 
     const local = localStorage.getItem('storeItem');
@@ -63,7 +70,7 @@ const handleFourty = () =>{
     localStoragee(40);
     
 }
-    // End___________
+    // End BreakPart___________
 
 
     return (
@@ -105,13 +112,13 @@ const handleFourty = () =>{
             <h3>Add a Break</h3>
 
             <div className='break-sec'>
-               {
+               {/* {
                 times.map(time => <BreakTime time = {time}
                     key={breakUseState}
                 handleBreak = {handleBreak}>
 
                 </BreakTime>)
-               }
+               } */}
             </div>
 
             <div>
@@ -124,7 +131,7 @@ const handleFourty = () =>{
 
             <div>
                 <h3>Palying Details</h3>
-                <p>Playing Time: </p>
+                <p>Playing Time: {total}</p>
                 <p>Break Time: {riaz}</p>
 
                 
