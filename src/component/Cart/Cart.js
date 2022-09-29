@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BreakTime from '../BreakTime/BreakTime';
+import { localStoragee } from '../LocalStorage/LOcalStorage';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -11,16 +12,58 @@ const Cart = (props) => {
         fetch('Break.json')
         .then(res=>res.json())
         .then(data=>setTimes(data))
-    },[])
+    },[]);
 
 
+    const [breakUseState,setBreakUseState] = useState([0]);
     const handleBreak = (time) => {
-        console.log('clicked');
+        setBreakUseState(breakUseState);
+        localStorage.setItem('breakTime', breakUseState);
+       
+    };
 
-    //    const  newTime = [...times, time];
-    //    setTimes(newTime);
+    useEffect(() => {
+        const storedItem = localStorage.getItem('breakTime');
+        if(storedItem){
+            setBreakUseState(storedItem);
+        }
+    },[]);
 
-    }
+
+
+    // start___________
+
+
+    const local = localStorage.getItem('storeItem');
+
+    const [riaz, setRiaz] = useState([local])
+
+
+
+    const handleTen = () =>{
+    setRiaz(10);
+    
+    localStoragee(10);
+}
+
+const handleTwenty = () =>{
+    setRiaz(20);
+    localStoragee(20);
+    
+}
+
+const handleThirty = () =>{
+    setRiaz(30);
+    localStoragee(30);
+    
+}
+
+const handleFourty = () =>{
+    setRiaz(40);
+    localStoragee(40);
+    
+}
+    // End___________
 
 
     return (
@@ -64,6 +107,7 @@ const Cart = (props) => {
             <div className='break-sec'>
                {
                 times.map(time => <BreakTime time = {time}
+                    key={breakUseState}
                 handleBreak = {handleBreak}>
 
                 </BreakTime>)
@@ -71,9 +115,19 @@ const Cart = (props) => {
             </div>
 
             <div>
+                <button onClick={handleTen}>10</button>
+                <button onClick={handleTwenty}>20</button>
+                <button onClick={handleThirty}>30</button>
+                <button onClick={handleFourty}>40</button>
+
+            </div>
+
+            <div>
                 <h3>Palying Details</h3>
                 <p>Playing Time: </p>
-                <p>Break Time: </p>
+                <p>Break Time: {riaz}</p>
+
+                
             </div>
 
             <button className='activity'>
